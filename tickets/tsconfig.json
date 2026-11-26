@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+
+    // ⬇️ CHANGE THIS LINE: Allow TypeScript to load the node types you installed
+    "types": ["node", "jest"],
+
+    // ⬇️ UNCOMMENT THIS LINE: Tells TypeScript you are targeting a modern Node environment
+    "lib": ["esnext"],
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  }
+}
