@@ -1,9 +1,5 @@
 import request from "supertest";
 import { app } from "../../app";
-import { natsWrapper } from "../../nats-wrapper";
-import { TicketCreatedPublisher } from "../../events/publishers/ticket-created-publisher";
-import mongoose from "mongoose";
-import { Subjects } from "@tickets/common";
 import { mockPublish } from "../../test/setup";
 
 it("has a route handler listening to /api/tickets for post requests", async () => {

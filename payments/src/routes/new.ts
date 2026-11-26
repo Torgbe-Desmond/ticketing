@@ -55,7 +55,7 @@ router.post("/api/payments",
 
      const payment = Payment.build({
       orderId, 
-      stripeId: charge.id
+      stripeId: new mongoose.Types.ObjectId().toHexString()
      })
 
      await payment.save()
