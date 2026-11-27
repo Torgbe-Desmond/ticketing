@@ -33,10 +33,12 @@ const paymentsSchema = new mongoose.Schema({
 })
 
 
-const Payment = mongoose.model<PaymentDoc, PaymentModel>("Payment", paymentsSchema)
 
 paymentsSchema.statics.build = function(attrs: PaymentAttrs){
     return new Payment(attrs)
 }
+
+const Payment = mongoose.model<PaymentDoc, PaymentModel>("Payment", paymentsSchema)
+
 
 export { Payment }
